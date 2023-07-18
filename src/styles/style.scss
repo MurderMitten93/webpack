@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Cats";
+  src: url("../fonts/font.ttf")
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Cats, serif;
+  padding: 0;
+  margin: 0;
+  font-size: 46px;
+}
+
+.about-cats {
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 66px;
+}
+
+.cats-block {
+  display: grid;
+  grid-template-columns: repeat(3, calc(33% - 15px));
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+
+  .cat-item{
+      display: flex;
+      justify-content: center;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
